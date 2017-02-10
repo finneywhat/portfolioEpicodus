@@ -68,12 +68,13 @@
 }
 
 .col-md-12 {
-  margin: 10% 0;
+  margin: 10% 0 5% 0;
 }
 
 .col-md-12 h1 {
   font-size: 50px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #section2 {
@@ -105,6 +106,16 @@
 
 .jumbotron-2 {
   align-items: flex-end;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2c/07/b5/2c07b52057f1105812e86081798f40f8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-2 h1 {
+font-size: 50px;
+text-align: center;
+margin-bottom: 30px;
+padding-top: 30px;
 }
 
 .projects {
@@ -142,11 +153,10 @@ li {
 
 .link {
   margin-top: 10px;
-  width: 100%;
-  margin-left: 20%;
+  margin-left: 26%;
 }
 
-a {
+.link a {
   background-color: black;
   color: #FFF;
   display: inline-block;
@@ -160,7 +170,7 @@ a {
   box-shadow: 0 0 20px 0 rgb(131,130,133);
 }
 
-a:hover {
+.link a:hover {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -171,44 +181,24 @@ a:visited {
   text-decoration: none;
 }
 
-.btn-scroll-2 {
-  background-color: #FFF;
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  box-shadow: 0 0 7px 0 rgba(0,0,0,.13);
-  margin-top: -26px;
-}
-
-.btn-scroll-2:hover {
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  margin-bottom: -4px;
-}
-
 .footer ul {
   color: white;
-  font-size: 20px;
   text-align: center;
   margin: 30px auto;
 }
 
 .footer li {
-  color: #FFF;
+  color: black;
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   text-align: left;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 0 20px;
-  margin-top: 290px;
 }
 
 .footer li:hover {
   color: #7c25f8;
-  background: white;
-  border-radius: 10px;
+  text-decoration: none;
 }
