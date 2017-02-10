@@ -4,8 +4,10 @@
 
 /*Possible Intro Jumbotron with fixed background image*/
 .jumbotron-1 {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_singaporeskyline.jpeg");
-  height: 350px;
+  background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
   width: 100%;
 	background-attachment: fixed;
   background-position: bottom center;
@@ -16,17 +18,22 @@
   color: white;
   font-size: 100px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 120px;
   font-family: 'Poppins', sans-serif;
 }
 
+.jumbotron-1 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 /*.sub {
   align-items: center;
 }*/
 
 .row {
   /*background-image: url(http://www.pixeden.com/media/k2/galleries/165/001-subtle-light-pattern-background-texture-vol5.jpg);*/
-  background-color: lightblue;
 }
 
 #intro-list2 {
@@ -40,7 +47,7 @@
 
 #profile-img {
   border: 2px solid black;
-  margin-top: 50px;
+  margin-top: 70px;
   /*margin-left: 7%;
   margin-top: 7px;*/
 }
@@ -61,7 +68,12 @@
 }
 
 .col-md-12 {
-  margin: 4% 0;
+  margin: 10% 0;
+}
+
+.col-md-12 h1 {
+  font-size: 50px;
+  text-align: center;
 }
 
 #section2 {
@@ -71,19 +83,24 @@
 
 .text1 {
   font-size: 24px;
-  color: green;
+  color: black;
   font-weight: 400;
   text-align: right;
 }
 
 .text2 {
   font-size: 16px;
-  color: red;
+  color: white;
   font-weight: 100;
 }
 
 .col-md-6 .text2 {
   margin-top: 20px;
+}
+
+.black-back {
+  background-color: black;
+  padding: 2%;
 }
 
 .jumbotron-2 {
@@ -99,21 +116,16 @@
 }
 
 .project-img {
-  /*display: inline-block;*/
   margin-top: 10px;
-  margin-left: 5%;
+  margin-left: 15%;
 }
 
 .project-description {
   display: inline-block;
-  width: 70%;
-  margin-top: 10px;
-  border-top: 1px solid #7c25f8;
-}
-
-.link {
-  margin-top: 10px;
+  text-align: center;
   width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid black;
 }
 
 ul {
@@ -131,6 +143,7 @@ li {
 .link {
   margin-top: 10px;
   width: 100%;
+  margin-left: 20%;
 }
 
 a {
@@ -152,7 +165,10 @@ a:hover {
   color: black;
   font-weight: bold;
   text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
 }
 
 .btn-scroll-2 {
