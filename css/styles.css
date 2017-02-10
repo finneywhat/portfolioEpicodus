@@ -2,15 +2,47 @@
   border: 2px solid black;
 }*/
 
-body {
-  margin: 1%;
+/*Possible Intro Jumbotron with fixed background image*/
+.jumbotron-1 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_singaporeskyline.jpeg");
+  height: 350px;
+  width: 100%;
+	background-attachment: fixed;
+  background-position: bottom center;
+  /*margin-bottom: 26px;*/
+}
+
+.jumbotron-1 h1 {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*.sub {
+  align-items: center;
+}*/
+
+.row {
+  /*background-image: url(http://www.pixeden.com/media/k2/galleries/165/001-subtle-light-pattern-background-texture-vol5.jpg);*/
+  background-color: lightblue;
+}
+
+#intro-list2 {
+  text-align: center;
+}
+
+.sub {
+  width: auto;
+  text-align: center;
 }
 
 #profile-img {
-  border-radius: 50%;
   border: 2px solid black;
-  margin-left: 7%;
-  margin-top: 7px;
+  margin-top: 50px;
+  /*margin-left: 7%;
+  margin-top: 7px;*/
 }
 
 #about-me {
@@ -22,15 +54,145 @@ body {
   border-bottom: 1px solid #337ab7;
 }
 
-/*.jumbotron {
+.jumbotron {
   width: 100%;
-  background-color: #7FD36E;
-}*/
+  background-color: lightgray;
+
+}
 
 .col-md-12 {
-  margin-top: 4%;
+  margin: 4% 0;
 }
 
 #section2 {
+  height: 500px;
+  margin-top: 2%;
+}
 
+.text1 {
+  font-size: 24px;
+  color: green;
+  font-weight: 400;
+  text-align: right;
+}
+
+.text2 {
+  font-size: 16px;
+  color: red;
+  font-weight: 100;
+}
+
+.col-md-6 .text2 {
+  margin-top: 20px;
+}
+
+.jumbotron-2 {
+  align-items: flex-end;
+}
+
+.projects {
+  margin: 20px 20px;
+	width: 30%;
+  display: inline-block;
+  padding: 10px 0px 20px 0px;
+  border: 2px solid black;
+}
+
+.project-img {
+  /*display: inline-block;*/
+  margin-top: 10px;
+  margin-left: 5%;
+}
+
+.project-description {
+  display: inline-block;
+  width: 70%;
+  margin-top: 10px;
+  border-top: 1px solid #7c25f8;
+}
+
+.link {
+  margin-top: 10px;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 10px 0px;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+
+/* possible adds*/
+
+.link {
+  margin-top: 10px;
+  width: 100%;
+}
+
+a {
+  background-color: black;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgb(131,130,133);
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.btn-scroll-2 {
+  background-color: #FFF;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,.13);
+  margin-top: -26px;
+}
+
+.btn-scroll-2:hover {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-bottom: -4px;
+}
+
+.footer ul {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.footer li {
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-top: 290px;
+}
+
+.footer li:hover {
+  color: #7c25f8;
+  background: white;
+  border-radius: 10px;
 }
