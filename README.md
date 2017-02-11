@@ -12,6 +12,7 @@ This is a profile webpage for our portfolio . It is intended to be my introducti
 * Clone this repository.
 * Open the HTML file in a browser.
 * Enjoy!
+* Or copy the following link: https://finneywhat.github.io/portfolioEpicodus/
 
 ## Support and contact details
 
