@@ -51,10 +51,6 @@
   margin-top: 5px;
 }
 
-.important {
-  font-weight: bold;
-}
-
 .titles {
   padding-bottom: 7px;
   border-bottom: 1px solid #337ab7;
@@ -63,7 +59,6 @@
 .jumbotron {
   width: 100%;
   background-color: lightgray;
-
 }
 
 .col-md-12 {
@@ -94,8 +89,23 @@
   font-weight: 100;
 }
 
+.great {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .tech {
   color: crimson;
+}
+
+.important {
+  font-weight: bold;
+}
+
+.important-1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .col-md-6 .text2 {
