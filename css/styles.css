@@ -2,7 +2,6 @@
   border: 2px solid black;
 }*/
 
-/*Possible Intro Jumbotron with fixed background image*/
 .jumbotron-1 {
   background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
   background-repeat: no-repeat;
@@ -10,7 +9,6 @@
   height: 450px;
   width: 100%;
 	background-attachment: fixed;
-  background-position: bottom center;
   /*margin-bottom: 26px;*/
 }
 
@@ -28,9 +26,6 @@
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-/*.sub {
-  align-items: center;
-}*/
 
 .row {
   /*background-image: url(http://www.pixeden.com/media/k2/galleries/165/001-subtle-light-pattern-background-texture-vol5.jpg);*/
@@ -54,6 +49,10 @@
 
 #about-me {
   margin-top: 5px;
+}
+
+.important {
+  font-weight: bold;
 }
 
 .titles {
@@ -83,7 +82,7 @@
 }
 
 .text1 {
-  font-size: 24px;
+  font-size: 12px;
   color: black;
   font-weight: 400;
   text-align: right;
@@ -93,6 +92,10 @@
   font-size: 16px;
   color: white;
   font-weight: 100;
+}
+
+.tech {
+  color: crimson;
 }
 
 .col-md-6 .text2 {
