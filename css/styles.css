@@ -4,19 +4,15 @@
 
 .jumbotron-1 {
   background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
-  width: 100%;
-	background-attachment: fixed;
-  /*margin-bottom: 26px;*/
 }
 
 .jumbotron-1 h1 {
   color: white;
   font-size: 100px;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 90px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -27,14 +23,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.row {
-  /*background-image: url(http://www.pixeden.com/media/k2/galleries/165/001-subtle-light-pattern-background-texture-vol5.jpg);*/
-}
-
-#intro-list2 {
-  text-align: center;
-}
-
 .sub {
   width: auto;
   text-align: center;
@@ -42,23 +30,9 @@
 
 #profile-img {
   border: 2px solid black;
-  margin-top: 70px;
+  margin-top: 100px;
   /*margin-left: 7%;
   margin-top: 7px;*/
-}
-
-#about-me {
-  margin-top: 5px;
-}
-
-.titles {
-  padding-bottom: 7px;
-  border-bottom: 1px solid #337ab7;
-}
-
-.jumbotron {
-  width: 100%;
-  background-color: lightgray;
 }
 
 .col-md-12 {
@@ -71,9 +45,8 @@
   margin-bottom: 30px;
 }
 
-#section2 {
-  height: 500px;
-  margin-top: 2%;
+.col-md-4 {
+  margin: 5px 0 0 0;
 }
 
 .text1 {
@@ -117,37 +90,57 @@
   padding: 0 2% 2% 2%;
 }
 
-.jumbotron-2 {
-  align-items: flex-end;
+.jumbotron-3 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2c/07/b5/2c07b52057f1105812e86081798f40f8.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 60px;
 }
 
-.jumbotron-2 h1 {
+.jumbotron-3 h1 {
 font-size: 50px;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 20px;
 padding-top: 30px;
 }
 
+.ordered-projects {
+  list-style-type: lower-roman;
+}
+
+/*.pros {
+  margin-bottom: 30px;
+}*/
+
 .projects {
-  margin: 20px 20px;
-	width: 30%;
-  display: inline-block;
-  padding: 10px 0px 20px 0px;
   border: 2px solid black;
+  background-color: white;
+}
+
+.project-list {
+  width: 250px;
+  margin: auto;
+  font-style: italic;
+}
+
+.project-list li {
+
 }
 
 .project-img {
   margin-top: 10px;
-  margin-left: 15%;
+  text-align: center;
+}
+
+.project-img img {
+  width: 55%;
 }
 
 .project-description {
-  display: inline-block;
   text-align: center;
   width: 100%;
+  height: 120px;
   margin-top: 10px;
   border-top: 1px solid black;
 }
@@ -157,16 +150,16 @@ ul {
   margin: 10px 0px;
 }
 
-li {
+.project-description li {
   margin: 0;
   list-style: none;
+  text-align: center;
 }
-
-/* possible adds*/
 
 .link {
   margin-top: 10px;
-  margin-left: 26%;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .link a {
@@ -179,7 +172,6 @@ li {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 20px;
   box-shadow: 0 0 20px 0 rgb(131,130,133);
 }
 
@@ -195,7 +187,6 @@ a:visited {
 }
 
 .footer ul {
-  color: white;
   text-align: center;
   margin: 30px auto;
 }
@@ -205,13 +196,17 @@ a:visited {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
-  text-align: left;
   font-weight: 400;
   text-transform: lowercase;
   padding: 0 20px;
 }
 
-.footer li:hover {
-  color: #7c25f8;
+.footer a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:visited {
   text-decoration: none;
 }
