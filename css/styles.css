@@ -1,8 +1,38 @@
+.gradient {
+  background: -moz-linear-gradient(top, rgba(242,246,248,0.66) 0%, rgba(236,241,244,0.66) 8%, rgba(216,225,231,0.75) 32%, rgba(181,198,208,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(242,246,248,0.66) 0%,rgba(236,241,244,0.66) 8%,rgba(216,225,231,0.75) 32%,rgba(181,198,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(242,246,248,0.66) 0%,rgba(236,241,244,0.66) 8%,rgba(216,225,231,0.75) 32%,rgba(181,198,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0px;
+  border: 0;
+}
+
+.nav-list ul {
+  text-align: center;
+}
+
+.nav-list li, .nav-list a {
+  color: black;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 0 10px;
+  text-align: center;
+  /*text-shadow: 0 5px 20px black;*/
+}
+
 .jumbotron-1 {
   background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
   background-size: cover;
   height: 450px;
   margin-bottom: 120px;
+  margin-top: -20px;
 }
 
 .jumbotron-1 h1 {
@@ -31,7 +61,7 @@
   border: 2px solid black;
   border-radius: 50%;
   box-shadow: 0px 5px 20px black;
-  margin-top: 130px;
+  margin-top: 120px;
   height: 200px;
 }
 
@@ -211,6 +241,7 @@ a:visited {
   font-weight: 400;
   text-transform: lowercase;
   padding: 0 20px;
+  text-shadow: 0 0 0;
 }
 
 .footer a:hover {
@@ -260,6 +291,11 @@ a:visited {
 }
 
 @media screen and (max-width: 480px) {
+  .nav-list li {
+    font-size: 18px;
+    padding: 0 2px;
+  }
+
   .projects {
     width: 370px;
   }
