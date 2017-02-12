@@ -1,19 +1,18 @@
-/*body {
-  border: 2px solid black;
-}*/
-
 .jumbotron-1 {
   background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
   background-size: cover;
   height: 450px;
+  margin-bottom: 120px;
 }
 
 .jumbotron-1 h1 {
   color: white;
+  text-shadow: 0 5px 20px black;
   font-size: 100px;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 80px;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 0px;
 }
 
 .jumbotron-1 p {
@@ -30,13 +29,20 @@
 
 #profile-img {
   border: 2px solid black;
-  margin-top: 100px;
-  /*margin-left: 7%;
-  margin-top: 7px;*/
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px black;
+  margin-top: 130px;
+  height: 200px;
+}
+
+#profile-img:hover {
+  height: 160px;
+  margin-top: 140px;
+  box-shadow: 0px 5px 20px black;
 }
 
 .col-md-12 {
-  margin: 10% 0 5% 0;
+  margin: 0 0 5% 0;
 }
 
 .col-md-12 h1 {
@@ -47,6 +53,7 @@
 
 .col-md-4 {
   margin: 5px 0 0 0;
+  float: left;
 }
 
 .text1 {
@@ -105,17 +112,23 @@ margin-bottom: 20px;
 padding-top: 30px;
 }
 
-.ordered-projects {
-  list-style-type: lower-roman;
+.container-fluid {
+
 }
 
-/*.pros {
-  margin-bottom: 30px;
-}*/
+#ordered-projects {
+  list-style-type: lower-roman;
+  text-decoration: none;
+}
+
+#ordered-projects a{
+  text-decoration: none;
+  color: black;
+}
 
 .projects {
   border: 2px solid black;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .project-list {
@@ -153,7 +166,6 @@ ul {
 .project-description li {
   margin: 0;
   list-style: none;
-  text-align: center;
 }
 
 .link {
@@ -168,7 +180,7 @@ ul {
   display: inline-block;
   font-family: 'Pontano Sans', sans-serif;
   font-size: 16px;
-  padding: 12px 25px;
+  padding: 7px 14px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -209,4 +221,54 @@ a:visited {
 
 .footer a:visited {
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron-1 h1 {
+    font-size: 60px;
+    padding-top: 120px;
+  }
+
+  .jumbotron-1 p {
+    font-size: 14px;
+  }
+
+  #profile-img {
+    height: 130px;
+    margin-top: 170px;
+    box-shadow: 0px 5px 20px black;
+  }
+
+  #profile-img:hover {
+    height: 100px;
+    margin-top: 190px;
+    box-shadow: 0px 5px 20px black;
+  }
+
+  .project-description {
+    font-size: 10px;
+  }
+
+  .col-md-12 h1 {
+    font-size: 40px;
+    margin-top: -30px;
+  }
+
+  .pros h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects {
+    width: 370px;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .footer li {
+    padding: 0 3px;
+  }
 }
