@@ -35,7 +35,7 @@
   text-transform: lowercase;
   padding: 0 10px;
   text-align: center;
-  text-shadow: 0 3px 20px black;
+  text-shadow: 0 4px 20px black;
   float: left;
 }
 
@@ -43,6 +43,10 @@
   text-decoration: none;
   color: white;
   /*border-top: 1px solid blue;*/
+}
+
+.nav-list a:visited, .nav-list li:visited {
+  text-decoration: none;
 }
 
 .jumbotron-1 {
@@ -71,23 +75,44 @@
   margin-top: -5px;
 }
 
-.sub {
-  width: auto;
+#cf {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
   text-align: center;
+}
+
+#cf img {
+  position: absolute;;
+  left: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #profile-img {
   border: 2px solid black;
   border-radius: 50%;
   box-shadow: 0px 5px 20px black;
-  margin-top: 120px;
+  margin-top: 125px;
   height: 200px;
+  z-index: 100;
+}
+
+#profile-img-2 {
+  border-radius: 50%;
+  margin-top: 125px;
+  height: 200px;
+  z-index: 10;
 }
 
 #profile-img:hover {
-  height: 160px;
+  /*height: 160px;
   margin-top: 140px;
-  box-shadow: 0px 5px 20px black;
+  box-shadow: 0px 5px 20px black;*/
+  opacity: 0;
 }
 
 .col-md-12 {
@@ -98,11 +123,6 @@
   font-size: 50px;
   text-align: center;
   margin-bottom: 30px;
-}
-
-.col-md-4 {
-  margin: 5px 0 0 0;
-  float: left;
 }
 
 .text1 {
@@ -161,8 +181,9 @@ margin-bottom: 20px;
 padding-top: 30px;
 }
 
-.container-fluid {
-
+.col-md-4 {
+  margin: 5px auto 0 auto;
+  float: left;
 }
 
 #ordered-projects {
@@ -273,6 +294,8 @@ a:visited {
   text-decoration: none;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 600px) {
   .jumbotron-1 h1 {
     font-size: 60px;
@@ -283,36 +306,32 @@ a:visited {
     font-size: 14px;
   }
 
+  #cf {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   #profile-img {
     height: 130px;
     margin-top: 170px;
     box-shadow: 0px 5px 20px black;
   }
 
-  #profile-img:hover {
-    height: 100px;
-    margin-top: 190px;
+  #profile-img-2 {
+    height: 130px;
+    width: 130px;
+    margin: 170px auto 0px auto;
+  }
+
+  #profile-img-1:hover {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    margin: 190px auto 0px auto;
     box-shadow: 0px 5px 20px black;
-  }
-
-  .project-description {
-    font-size: 10px;
-  }
-
-  .col-md-12 h1 {
-    font-size: 40px;
-    margin-top: -30px;
-  }
-
-  .pros h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .nav-list li {
-    font-size: 18px;
-    padding: 0 2px;
   }
 
   .projects {
@@ -325,5 +344,21 @@ a:visited {
 
   .footer li {
     padding: 0 3px;
+  }
+
+  .col-md-12 h1 {
+    font-size: 40px;
+    margin-top: -30px;
+  }
+
+  .pros h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-list li {
+    font-size: 18px;
+    padding: 0 2px;
   }
 }
