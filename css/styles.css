@@ -1,23 +1,70 @@
-/*body {
-  border: 2px solid black;
+.gradient {
+  background: -moz-linear-gradient(top, rgba(242,246,248,0.66) 0%, rgba(236,241,244,0.66) 8%, rgba(216,225,231,0.75) 32%, rgba(181,198,208,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(242,246,248,0.66) 0%,rgba(236,241,244,0.66) 8%,rgba(216,225,231,0.75) 32%,rgba(181,198,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(242,246,248,0.66) 0%,rgba(236,241,244,0.66) 8%,rgba(216,225,231,0.75) 32%,rgba(181,198,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0px;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand img {
+  width: 50px;
+  padding-bottom: 5px;
+}
+
+/*.navbar-brand img:hover {
+  border-top: 1px solid blue;
 }*/
+
+.nav-list ul {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.nav-list li, .nav-list a {
+  color: black;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: 0 4px 20px black;
+  float: left;
+}
+
+.nav-list a:hover {
+  text-decoration: none;
+  color: white;
+  /*border-top: 1px solid blue;*/
+}
+
+.nav-list a:visited, .nav-list li:visited {
+  text-decoration: none;
+}
 
 .jumbotron-1 {
   background-image: url("http://www.wheretraveler.com/sites/default/files/styles/main_slider/public/WashingtonDC-shutterstock_93633676.jpg?itok=stxmVO3e");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
-  width: 100%;
-	background-attachment: fixed;
-  /*margin-bottom: 26px;*/
+  margin-bottom: 120px;
+  margin-top: -20px;
 }
 
 .jumbotron-1 h1 {
   color: white;
+  text-shadow: 0 5px 20px black;
   font-size: 100px;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 80px;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 0px;
 }
 
 .jumbotron-1 p {
@@ -25,55 +72,57 @@
   font-size: 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  margin-top: -5px;
 }
 
-.row {
-  /*background-image: url(http://www.pixeden.com/media/k2/galleries/165/001-subtle-light-pattern-background-texture-vol5.jpg);*/
-}
-
-#intro-list2 {
+#cf {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.sub {
-  width: auto;
-  text-align: center;
+#cf img {
+  position: absolute;;
+  left: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #profile-img {
   border: 2px solid black;
-  margin-top: 70px;
-  /*margin-left: 7%;
-  margin-top: 7px;*/
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px black;
+  margin-top: 125px;
+  height: 200px;
+  z-index: 100;
 }
 
-#about-me {
-  margin-top: 5px;
+#profile-img-2 {
+  border-radius: 50%;
+  margin-top: 125px;
+  height: 200px;
+  z-index: 10;
 }
 
-.titles {
-  padding-bottom: 7px;
-  border-bottom: 1px solid #337ab7;
-}
-
-.jumbotron {
-  width: 100%;
-  background-color: lightgray;
+#profile-img:hover {
+  /*height: 160px;
+  margin-top: 140px;
+  box-shadow: 0px 5px 20px black;*/
+  opacity: 0;
 }
 
 .col-md-12 {
-  margin: 10% 0 5% 0;
+  margin: 0 0 5% 0;
 }
 
 .col-md-12 h1 {
   font-size: 50px;
   text-align: center;
   margin-bottom: 30px;
-}
-
-#section2 {
-  height: 500px;
-  margin-top: 2%;
 }
 
 .text1 {
@@ -117,37 +166,64 @@
   padding: 0 2% 2% 2%;
 }
 
-.jumbotron-2 {
-  align-items: flex-end;
+.jumbotron-3 {
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2c/07/b5/2c07b52057f1105812e86081798f40f8.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 60px;
 }
 
-.jumbotron-2 h1 {
+.jumbotron-3 h1 {
 font-size: 50px;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 20px;
 padding-top: 30px;
 }
 
+.col-md-4 {
+  margin: 5px auto 0 auto;
+  float: left;
+}
+
+#ordered-projects {
+  list-style-type: lower-roman;
+  text-decoration: none;
+}
+
+#ordered-projects a{
+  text-decoration: none;
+  color: black;
+}
+
 .projects {
-  margin: 20px 20px;
-	width: 30%;
-  display: inline-block;
-  padding: 10px 0px 20px 0px;
   border: 2px solid black;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.project-list {
+  width: 250px;
+  margin: auto;
+  font-style: italic;
+}
+
+.project-list li {
+
 }
 
 .project-img {
   margin-top: 10px;
-  margin-left: 15%;
+  text-align: center;
+}
+
+.project-img img {
+  width: 55%;
 }
 
 .project-description {
-  display: inline-block;
   text-align: center;
   width: 100%;
+  height: 120px;
   margin-top: 10px;
   border-top: 1px solid black;
 }
@@ -157,16 +233,15 @@ ul {
   margin: 10px 0px;
 }
 
-li {
+.project-description li {
   margin: 0;
   list-style: none;
 }
 
-/* possible adds*/
-
 .link {
   margin-top: 10px;
-  margin-left: 26%;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .link a {
@@ -175,11 +250,10 @@ li {
   display: inline-block;
   font-family: 'Pontano Sans', sans-serif;
   font-size: 16px;
-  padding: 12px 25px;
+  padding: 7px 14px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 20px;
   box-shadow: 0 0 20px 0 rgb(131,130,133);
 }
 
@@ -195,7 +269,6 @@ a:visited {
 }
 
 .footer ul {
-  color: white;
   text-align: center;
   margin: 30px auto;
 }
@@ -205,13 +278,87 @@ a:visited {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
-  text-align: left;
   font-weight: 400;
   text-transform: lowercase;
   padding: 0 20px;
+  text-shadow: 0 0 0;
 }
 
-.footer li:hover {
-  color: #7c25f8;
+.footer a:hover {
+  color: black;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:visited {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .jumbotron-1 h1 {
+    font-size: 60px;
+    padding-top: 120px;
+  }
+
+  .jumbotron-1 p {
+    font-size: 14px;
+  }
+
+  #cf {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #profile-img {
+    height: 130px;
+    margin-top: 170px;
+    box-shadow: 0px 5px 20px black;
+  }
+
+  #profile-img-2 {
+    height: 130px;
+    width: 130px;
+    margin: 170px auto 0px auto;
+  }
+
+  #profile-img-1:hover {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    margin: 190px auto 0px auto;
+    box-shadow: 0px 5px 20px black;
+  }
+
+  .projects {
+    width: 370px;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .footer li {
+    padding: 0 3px;
+  }
+
+  .col-md-12 h1 {
+    font-size: 40px;
+    margin-top: -30px;
+  }
+
+  .pros h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-list li {
+    font-size: 18px;
+    padding: 0 2px;
+  }
 }
